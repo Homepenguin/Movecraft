@@ -538,6 +538,7 @@ final public class CraftType {
                     fuelTypes.put(Material.COAL_BLOCK, 80.0);
                     fuelTypes.put(Material.COAL, 8.0);
                     fuelTypes.put(Material.CHARCOAL, 8.0);
+                    fuelTypes.put(Material.OraxenItems.(amethyst), 8.0);
                     return fuelTypes;
                 }
         ));
