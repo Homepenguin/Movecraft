@@ -11,7 +11,34 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <revision>8.0.0_beta-1</revision>
     </properties>
-
+    <dependency>
+            <groupId>com.github.oraxen</groupId>
+            <artifactId>oraxen</artifactId>
+            <version>VERSION</version>
+            <scope>provided</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>gs.mclo</groupId>
+                    <artifactId>mclogs</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.ticxo.playeranimator</groupId>
+                    <artifactId>PlayerAnimator</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>me.gabytm.util</groupId>
+                    <artifactId>actions-spigot</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>net.kyori</groupId>
+                    <artifactId>*</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.jeff_media</groupId>
+                    <artifactId>*</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
     <modules>
         <module>modules/api</module>
         <module>modules/v1_14_R1</module>
@@ -28,7 +55,7 @@
             <id>spigot-repo</id>
             <url>https://hub.spigotmc.org/nexus/content/groups/public/</url>
         </repository>
-            <repository>
+        <repository>
             <id>jitpack.io</id>
             <url>https://jitpack.io</url>
         </repository>
