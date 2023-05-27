@@ -64,6 +64,17 @@ import java.util.function.BiFunction;
 import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
+import io.th0rgal.oraxen.OraxenPlugin;
+import io.th0rgal.oraxen.config.ConfigsManager;
+import io.th0rgal.oraxen.config.Message;
+import io.th0rgal.oraxen.items.ItemBuilder;
+import io.th0rgal.oraxen.mechanics.MechanicFactory;
+import io.th0rgal.oraxen.mechanics.MechanicsManager;
+import io.th0rgal.oraxen.utils.AdventureUtils;
+import org.bukkit.Material;
+import org.bukkit.NamespacedKey;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.persistence.PersistentDataType;
 
 final public class CraftType {
     //region Property Keys
@@ -538,7 +549,7 @@ final public class CraftType {
                     fuelTypes.put(Material.COAL_BLOCK, 80.0);
                     fuelTypes.put(Material.COAL, 8.0);
                     fuelTypes.put(Material.CHARCOAL, 8.0);
-                    fuelTypes.put(Material.OraxenItems.(amethyst), 8.0);
+                    fuelTypes.put(Material.OraxenItems(amethyst), 8.0);
                     return fuelTypes;
                 }
         ));

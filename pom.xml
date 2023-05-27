@@ -11,10 +11,11 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <revision>8.0.0_beta-1</revision>
     </properties>
-    <dependency>
+    <dependencies>
+        <dependency>
             <groupId>com.github.oraxen</groupId>
             <artifactId>oraxen</artifactId>
-            <version>VERSION</version>
+            <version>1.156.2</version>
             <scope>provided</scope>
             <exclusions>
                 <exclusion>
@@ -30,15 +31,16 @@
                     <artifactId>actions-spigot</artifactId>
                 </exclusion>
                 <exclusion>
-                    <groupId>net.kyori</groupId>
-                    <artifactId>*</artifactId>
+                   <groupId>net.kyori</groupId>
+                   <artifactId>*</artifactId>
                 </exclusion>
                 <exclusion>
                     <groupId>com.jeff_media</groupId>
                     <artifactId>*</artifactId>
                 </exclusion>
             </exclusions>
-        </dependency>
+        <dependency>
+    <dependencies>
     <modules>
         <module>modules/api</module>
         <module>modules/v1_14_R1</module>
