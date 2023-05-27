@@ -39,8 +39,8 @@
                     <artifactId>*</artifactId>
                 </exclusion>
             </exclusions>
-        <dependency>
-    <dependencies>
+        </dependency>
+    </dependencies>
     <modules>
         <module>modules/api</module>
         <module>modules/v1_14_R1</module>
