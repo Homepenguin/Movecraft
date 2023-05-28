@@ -513,10 +513,7 @@ final public class CraftType {
                 },
                 type -> {
                     Map<Material, Double> fuelTypes = new HashMap<>();
-                    fuelTypes.put(Material.COAL_BLOCK, 80.0);
-                    fuelTypes.put(Material.COAL, 8.0);
-                    fuelTypes.put(Material.CHARCOAL, 8.0);
-                    fuelTypes.put(OraxenItems.isAnItem(celium), 8.0);
+                    fuelTypes.put(Material.PAPER, 80.0);
                     return fuelTypes;
                 }
         ));

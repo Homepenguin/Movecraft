@@ -37,4 +37,7 @@ public class FuelBurnEvent extends CraftEvent{
     public void setFuelBurnRate(double fuelBurnRate) {
         this.fuelBurnRate = fuelBurnRate;
     }
+
+    public void setCancelled(boolean b) {
+    }
 }
