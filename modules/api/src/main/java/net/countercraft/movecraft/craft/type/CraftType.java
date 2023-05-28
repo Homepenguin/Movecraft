@@ -17,27 +17,9 @@
 
 package net.countercraft.movecraft.craft.type;
 
-import net.countercraft.movecraft.craft.type.property.BooleanProperty;
-import net.countercraft.movecraft.craft.type.property.DoubleProperty;
-import net.countercraft.movecraft.craft.type.property.FloatProperty;
-import net.countercraft.movecraft.craft.type.property.ObjectProperty;
-import net.countercraft.movecraft.craft.type.property.IntegerProperty;
-import net.countercraft.movecraft.craft.type.property.MaterialSetProperty;
-import net.countercraft.movecraft.craft.type.property.ObjectPropertyImpl;
-import net.countercraft.movecraft.craft.type.property.PerWorldProperty;
-import net.countercraft.movecraft.craft.type.property.Property;
-import net.countercraft.movecraft.craft.type.property.RequiredBlockProperty;
-import net.countercraft.movecraft.craft.type.property.StringProperty;
-import net.countercraft.movecraft.craft.type.transform.BooleanTransform;
-import net.countercraft.movecraft.craft.type.transform.DoubleTransform;
-import net.countercraft.movecraft.craft.type.transform.FloatTransform;
-import net.countercraft.movecraft.craft.type.transform.IntegerTransform;
-import net.countercraft.movecraft.craft.type.transform.MaterialSetTransform;
-import net.countercraft.movecraft.craft.type.transform.ObjectTransform;
-import net.countercraft.movecraft.craft.type.transform.PerWorldTransform;
-import net.countercraft.movecraft.craft.type.transform.RequiredBlockTransform;
-import net.countercraft.movecraft.craft.type.transform.StringTransform;
-import net.countercraft.movecraft.craft.type.transform.Transform;
+import io.th0rgal.oraxen.api.OraxenItems;
+import net.countercraft.movecraft.craft.type.property.*;
+import net.countercraft.movecraft.craft.type.transform.*;
 import net.countercraft.movecraft.processing.MovecraftWorld;
 import net.countercraft.movecraft.util.Pair;
 import net.countercraft.movecraft.util.Tags;
@@ -53,28 +35,14 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 import java.io.File;
-import java.util.ArrayList;
-import java.util.EnumSet;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 import java.util.function.BiFunction;
 import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
-import io.th0rgal.oraxen.OraxenPlugin;
-import io.th0rgal.oraxen.config.ConfigsManager;
-import io.th0rgal.oraxen.config.Message;
-import io.th0rgal.oraxen.items.ItemBuilder;
-import io.th0rgal.oraxen.mechanics.MechanicFactory;
-import io.th0rgal.oraxen.mechanics.MechanicsManager;
-import io.th0rgal.oraxen.utils.AdventureUtils;
-import org.bukkit.Material;
-import org.bukkit.NamespacedKey;
-import org.bukkit.inventory.ItemStack;
-import org.bukkit.persistence.PersistentDataType;
+
+import static io.th0rgal.oraxen.api.OraxenItems.*;
+
 
 final public class CraftType {
     //region Property Keys
@@ -386,7 +354,6 @@ final public class CraftType {
     }
 
 
-
     static {
         /* Required properties */
         registerProperty(new StringProperty("name", NAME));
@@ -549,7 +516,7 @@ final public class CraftType {
                     fuelTypes.put(Material.COAL_BLOCK, 80.0);
                     fuelTypes.put(Material.COAL, 8.0);
                     fuelTypes.put(Material.CHARCOAL, 8.0);
-                    fuelTypes.put(Material.OraxenItems(amethyst), 8.0);
+                    fuelTypes.put(OraxenItems.isAnItem(celium), 8.0);
                     return fuelTypes;
                 }
         ));
