@@ -1,0 +1,4 @@
+name: hpmovecraftaddon
+version: '${project.version}'
+main: me.homepenguin.hpmovecraftaddon.Hpmovecraftaddon
+api-version: 1.19

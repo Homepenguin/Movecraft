@@ -12,16 +12,7 @@
         <revision>8.0.0_beta-1</revision>
     </properties>
 
-    <modules>
-        <module>modules/api</module>
-        <module>modules/v1_14_R1</module>
-        <module>modules/v1_16_R3</module>
-        <module>modules/v1_17_R1</module>
-        <module>modules/v1_18_R2</module>
-        <module>modules/v1_19_R3</module>
-        <module>modules/datapack</module>
-        <module>modules/Movecraft</module>
-    </modules>
+
 
     <repositories>
         <repository>
